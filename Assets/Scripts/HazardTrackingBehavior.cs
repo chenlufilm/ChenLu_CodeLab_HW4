@@ -1,4 +1,3 @@
-using UnityEditor.Build.Player;
 using UnityEngine;
 
 public class HazardTrackingBehavior : MonoBehaviour
@@ -20,6 +19,7 @@ public class HazardTrackingBehavior : MonoBehaviour
         float randomX = Random.Range(-6.45f, 10.12f);
         float randomY = Random.Range(-2.61f, 3.18f);
         transform.position = new Vector3(randomX, randomY, 0);
+        tracking = false;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
